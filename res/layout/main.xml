@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:text="低兼容版本的点击涟漪效果"
+            android:gravity="center"
+            android:background="#ffff00"
+            />
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+    <com.example.ripples.RippleLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            app:mrl_rippleColor="#ffffff00"
+            app:mrl_rippleDimension="10dp"
+            app:mrl_rippleOverlay="true"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleDuration="2000"
+            app:mrl_rippleFadeDuration="1000"
+            app:mrl_rippleHover="true"
+            app:mrl_rippleBackground="#ff00"
+            app:mrl_rippleDelayClick="true"
+            app:mrl_ripplePersistent="false"
+            app:mrl_rippleRoundedCorners="1dp"
+
+            >
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:clickable="true"
+                android:onClick="clickText"
+                android:layout_margin="10dp"
+                android:text="页面底部的按钮"
+                />
+    </com.example.ripples.RippleLayout>
+</LinearLayout>
+

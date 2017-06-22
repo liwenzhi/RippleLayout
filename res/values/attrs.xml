@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--涟漪效果。。。-->
+    <declare-styleable name="RippleLayout">
+        <!--涟漪产生的颜色-->
+        <attr name="mrl_rippleColor" format="color" localization="suggested"/>
+        <!--涟漪刚开始产生的范围大小，。。dp，-->
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested"/>
+        <!--涟漪产生的波纹是否会覆盖，默认false-->
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested"/>
+        <!--涟漪产生的波纹的透明度，1表示完全显示，0就不显示，0.2就显示很浅的一点-->
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested"/>
+        <!--涟漪产生的时间长短，毫秒数-->
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested"/>
+        <!--涟漪消失过程的时间长短，毫秒数-->
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested"/>
+        <!--涟漪是否盘旋显示-->
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested"/>
+        <!--背景颜色,和backgroud一样-->
+        <attr name="mrl_rippleBackground" format="color" localization="suggested"/>
+        <!--是否延迟点击-->
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested"/>
+        <!--是否是显示涟漪后的效果，就是颜色变了一直保持那种颜色 -->
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested"/>
+        <!--适配器，对于适配器的条目才能用这个属性，否则会报错-->
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested"/>
+        <!--涟漪图形的圆角大小-->
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested"/>
+    </declare-styleable>
+
+</resources>
